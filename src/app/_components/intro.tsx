@@ -5,9 +5,16 @@ import Link from "next/link";
 export function Intro() {
   return (
     <section className="flex-col flex gap-16 mb-16 mt-8 md:mb-12">
-      <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-        <Link href="/">Mateus Bez Fontana</Link> 
-      </h1>
+      <div className="flex items-end justify-between">
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-none">
+          Mateus Bez Fontana
+        </h1>
+        <div className="flex gap-4 ">
+          <Link href='/posts' className="hover:underline">Posts</Link>
+          <Link href='/about' className="hover:underline">About</Link>
+          <Link href='/links' className="hover:underline">My Links</Link>
+        </div>
+      </div>
       <div className="flex gap-8">
         <Image src="/assets/profile.webp" alt="Mateus' profile picture" width={240} height={240} className="rounded-full"/>
         <div className="flex flex-col gap-4">
