@@ -9,14 +9,14 @@ export function Intro() {
         <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-none">
           Mateus Bez Fontana
         </h1>
-        <div className="flex gap-4 ">
+        <div className="flex gap-4">
           <Link href='/posts' className="hover:underline">Posts</Link>
           <Link href='/about' className="hover:underline">About</Link>
           <Link href='/links' className="hover:underline">My Links</Link>
         </div>
       </div>
-      <div className="flex gap-8">
-        <Image src="/assets/profile.webp" alt="Mateus' profile picture" width={240} height={240} className="rounded-full"/>
+      <div className="flex flex-col md:flex-row gap-8">
+        <Image src="/assets/profile.webp" alt="Mateus' profile picture" width={240} height={240} className="rounded-full self-center min-w-[240px] h-full"/>
         <div className="flex flex-col gap-4">
           <h2 className="font-bold text-3xl">
             Hi!
